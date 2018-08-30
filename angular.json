@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "WalmartPV": {
+    "Walmart-Product-Viewer": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/WalmartPV",
+            "outputPath": "dist/Walmart-Product-Viewer",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "WalmartPV:build"
+            "browserTarget": "Walmart-Product-Viewer:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "WalmartPV:build:production"
+              "browserTarget": "Walmart-Product-Viewer:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "WalmartPV:build"
+            "browserTarget": "Walmart-Product-Viewer:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "WalmartPV-e2e": {
+    "Walmart-Product-Viewer-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "WalmartPV:serve"
+            "devServerTarget": "Walmart-Product-Viewer:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "WalmartPV:serve:production"
+              "devServerTarget": "Walmart-Product-Viewer:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "WalmartPV"
+  "defaultProject": "Walmart-Product-Viewer"
 }
