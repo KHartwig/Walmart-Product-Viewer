@@ -5,13 +5,11 @@ module.exports = {
   getById
 };
 
-
 async function getById(id) {
   const url = `${config.walmartApiUrl}/items/${id}?format=json&apiKey=${config.walmartDevApiKey}`;
-  console.log('GET item from ' + url);
-
   const response = await axios.get(url);
-  console.log('Response: ', response);
+
+  // Handle data
   if (response.data && response.data.itemId){
     return response.data;
   }
