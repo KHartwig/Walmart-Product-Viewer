@@ -1,6 +1,6 @@
 # Walmart Product Viewer
 
-Simple web app for viewing products on Walmart's website.
+Simple web app for viewing products on Walmart's website. Built with Angular 6, Node, and Express.
 
 ## Starting App
 Use the following commands: 
