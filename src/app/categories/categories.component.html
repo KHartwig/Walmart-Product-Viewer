@@ -1,3 +1,9 @@
-<p>
-  categories works!
-</p>
+<h1>Specific Category</h1>
+{{categoryId}}
+
+<ol>
+  <li *ngFor="let product of products">
+    {{ product.name }}
+    <img src="{{product.thumbnailImage}}" alt="">
+  </li>
+</ol>

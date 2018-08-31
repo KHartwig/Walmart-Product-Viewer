@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let category of productCategories">
+    <a href="/categories/{{category.id}}">
+      {{ category.name }} -> {{ category.id }}
+    </a>
+  </li>
+</ul>
