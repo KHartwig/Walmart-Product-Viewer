@@ -1,7 +1,8 @@
 import {PaginatedItem} from './PaginatedItem';
+import {Category} from './Category';
 
 export class PaginatedItems {
-  category: string;
+  category: Category;
   items: PaginatedItem[];
   totalPages: string;
 }

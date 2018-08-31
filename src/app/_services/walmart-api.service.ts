@@ -7,7 +7,7 @@ import {Category} from '../_models/WalmartAPI/Category';
 export class WalmartApiService {
   constructor(private http: HttpClient) {}
 
-  apiUrl = 'http://localhost:4040';
+  apiUrl = 'http://localhost:4040/api';
 
   GetCategories() {
     return this.http.get<Category[]>(this.apiUrl + `/categories`);

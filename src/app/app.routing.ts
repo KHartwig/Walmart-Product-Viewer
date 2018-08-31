@@ -9,7 +9,6 @@ const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'categories/:categoryId', component: CategoriesComponent },
   { path: 'products/:productId', component: ProductsComponent },
-  // { path: '**', redirectTo: '' }
   { path: '**', component: PageNotFoundComponent }
 ];
 
