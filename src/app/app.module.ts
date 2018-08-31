@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ProductsComponent } from './products/products.component';
 import { CategoriesListComponent } from './categories-list/categories-list.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CategoriesListComponent } from './categories-list/categories-list.compo
     HomeComponent,
     CategoriesComponent,
     ProductsComponent,
-    CategoriesListComponent
+    CategoriesListComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

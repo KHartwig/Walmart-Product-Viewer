@@ -1,19 +1,23 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {TaxonomyResponse} from '../_models/WalmartAPI/TaxonomyResponse';
-import {PaginatedResponse} from '../_models/WalmartAPI/PaginatedResponse';
+import {PaginatedItems} from '../_models/WalmartAPI/PaginatedItems';
+import {Category} from '../_models/WalmartAPI/Category';
 
 @Injectable()
 export class WalmartApiService {
   constructor(private http: HttpClient) {}
 
-  apiUrl = 'http://localhost:4040/api';
+  apiUrl = 'http://localhost:4040';
 
   GetCategories() {
-    return this.http.get<TaxonomyResponse>(this.apiUrl + `/categories`);
+    return this.http.get<Category[]>(this.apiUrl + `/categories`);
   }
 
-  GetProducts(categoryId: string) {
-    return this.http.get<PaginatedResponse>(this.apiUrl + `/categories/${categoryId}`);
+  GetCategoryProducts(categoryId: string) {
+    return this.http.get<PaginatedItems>(this.apiUrl + `/categories/${categoryId}`);
+  }
+
+  GetProductDetails(productId: string) {
+    return this.http.get(this.apiUrl + `/products/${productId}`)
   }
 }

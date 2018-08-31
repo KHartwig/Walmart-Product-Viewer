@@ -1,6 +1,6 @@
 import {PaginatedItem} from './PaginatedItem';
 
-export class PaginatedResponse {
+export class PaginatedItems {
   category: string;
   items: PaginatedItem[];
   totalPages: string;

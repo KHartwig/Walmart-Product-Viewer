@@ -1,9 +1,14 @@
-<h1>Specific Category</h1>
-{{categoryId}}
+<p>
+  <a href="/">Back to Categories</a>
+</p>
 
-<ol>
-  <li *ngFor="let product of products">
-    {{ product.name }}
-    <img src="{{product.thumbnailImage}}" alt="">
-  </li>
-</ol>
+<h3>Specific Category</h3>
+
+<table>
+  <tbody>
+  <tr *ngFor="let product of products">
+    <td><img src="{{product.thumbnailImage}}" alt=""></td>
+    <td><a href="/products/{{product.itemId}}">{{ product.name }}</a></td>
+  </tr>
+  </tbody>
+</table>
